@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2018_07_08_135344) do
+=======
+ActiveRecord::Schema.define(version: 2018_07_08_233812) do
+>>>>>>> resource-generator
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +26,19 @@ ActiveRecord::Schema.define(version: 2018_07_08_135344) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
+=======
+  create_table "portfolios", force: :cascade do |t|
+    t.string "title"
+    t.string "subtitle"
+    t.text "body"
+    t.text "main_image"
+    t.text "thumb_image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+>>>>>>> resource-generator
   create_table "skills", force: :cascade do |t|
     t.string "title"
     t.integer "percent_utilized"
