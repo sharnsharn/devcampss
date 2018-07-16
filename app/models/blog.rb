@@ -1,7 +1,6 @@
 class Blog < ApplicationRecord
 
+  extend FriendlyId
+  friendly_id :title, use: :slugged
 
-    def self.special_blogs
-      all
-    end
 end
